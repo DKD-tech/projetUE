@@ -1,0 +1,134 @@
+.container{
+    height: 90px;
+    padding: 0px 50px;
+    background-color: #203040;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+.item:nth-child(2){
+    flex: 3;
+}
+
+
+
+.item:last-child{
+    justify-content: flex-end;
+}
+.callButton{
+    min-width: 60px;
+    width: 50px;
+}
+
+.texts{
+    margin-left: 20px;
+    color: white;
+}
+
+.text:first-child{
+    font-size: 12px;
+    font-weight: 5OO;
+}
+
+.text:last-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+.list{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+
+.listItem{
+    margin: 50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+.cart{
+    position: relative;
+    cursor: pointer;
+}
+
+.logo {
+    min-width: 40px;
+    width: 50px;
+  }
+
+  .inputBox {
+    background: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 8px 15px;
+    width: 190px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  }  
+  .inputBox .searchIcon {
+    color: #787a84;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .inputBox input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #787a84;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+.counter{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(243, 228, 237);
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ea7656;
+}
+.login{
+    color: #ffffff;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.login ul li{
+    list-style: none;
+}
+
+@media screen and (max-width:480px) {
+    .item:nth-child(2){
+        display: none;
+    }
+
+    .item:nth-child(1) {
+        flex: 3;
+    }
+}

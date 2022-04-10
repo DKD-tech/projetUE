@@ -1,0 +1,87 @@
+.container{
+    width: 22%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+.details{
+    width: 100%;
+    border-radius: 10px;
+    background: rgb(233, 230, 230);
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+    cursor: pointer;  
+  
+}
+
+.details .Link{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  } 
+
+  .details:hover{
+    background: #e6e1db;
+  }
+
+  .details .img Image{
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .details:hover .img{
+       background: #faf9fb;
+  }
+
+  .details:hover  .img Image{
+    width: 80%;
+    height: 80%;
+    transition: 0.5s;
+  }
+ 
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #d1411e;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.desc{
+   text-align: center;
+   color: #777;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .price,
+    .desc{
+        font-size: 24px;
+    }
+}

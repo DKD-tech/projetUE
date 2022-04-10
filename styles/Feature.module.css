@@ -1,0 +1,74 @@
+.container{
+    height: calc(100vh - 100px);
+    background-color: rgb(209, 237, 245);
+    overflow: hidden;
+    position: relative;
+}
+.arrowContainer{
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.wrapper{
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    transition: all 1.5s ease-in-out;
+}
+.imgContainer{
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        height: 50vh;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    background: url("https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fbanner.png?alt=media&token=7e244d84-8821-477d-b273-4c9381a474fb")
+      no-repeat center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: aquamarine;
+  }
+  .deliveryPic {
+    position: absolute;
+    right: -60px;
+    bottom: -10px;
+    width: 240px;
+  } 
+  .bannerContent{
+    padding: 8px;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+  }
+  .bannerContent a {
+    background: #f8901c;
+    padding: 10px 10px;
+    border-radius: 100vw;
+    color: #faf9fb;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .bannerContent a:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+  }
